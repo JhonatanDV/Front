@@ -1,14 +1,10 @@
 {
   "name": "paginaweb-main",
   "version": "1.0.0",
-  "main": "server.js",
   "scripts": {
-    "start": "node my-webapp/server.js --host 0.0.0.0"
+    "start": "node my-webapp/server.js --host 0.0.0.0",
+    "build": "echo 'No build step necessary'"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.19.2",
