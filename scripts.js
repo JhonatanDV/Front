@@ -2,7 +2,7 @@ import config from './config.js'; // Aseg√∫rate de que la ruta sea correcta seg√
 
 async function loadProducts() {
     try {
-        const response = await fetch(`${config.backendUrl}/api/almacenes`);
+        const response = await fetch(`${config.backendUrl}/api/productos`);
         if (!response.ok) throw new Error('Error en la solicitud: ' + response.statusText);
 
         const products = await response.json();
