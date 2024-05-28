@@ -1,6 +1,8 @@
+import config from './config.js'; // Asegúrate de que la ruta sea correcta según tu estructura de proyecto
+
 async function loadProducts() {
     try {
-        const response = await fetch('http://localhost:3000/productos');
+        const response = await fetch(`${config.backendUrl}/api/almacenes`);
         if (!response.ok) throw new Error('Error en la solicitud: ' + response.statusText);
 
         const products = await response.json();
